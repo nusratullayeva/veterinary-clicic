@@ -1,0 +1,52 @@
+@use '../mixins';
+@use '../variables';
+.section3 {
+    min-height: 481px;
+    background-image: url(../images/section-bg.png);
+    padding-top: 127px;
+}
+
+.start-h {
+    padding-bottom: 32px;
+    font-size: 48px;
+    color: #FFFFFF;
+    padding-top: 80px;
+    padding-left: 160px;
+}
+
+.start-input::placeholder {
+    padding-left: 20px;
+    font-size: 16px;
+    color: #949494;
+}
+
+.start-input {
+    margin-left: 160px;
+    width: 335px;
+    height: 50px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+}
+
+.start-input:focus {
+    border: 2px solid #FFBD54;
+}
+
+.start-btn {
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 188px;
+    height: 50px;
+    background: variables.$primary-color;
+    border-radius: 3px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.start-btn:hover {
+    color: variables.$primary-color;
+    background-color: #FFBD54;
+    border: none;
+    transition: 0.5s;
+}

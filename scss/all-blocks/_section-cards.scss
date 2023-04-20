@@ -1,0 +1,127 @@
+@use '../mixins';
+@use '../variables';
+.section-cards {
+    background-color: #F9F8F8;
+    padding-top: 191px;
+}
+
+.cards__value {
+    padding-bottom: 80px;
+    text-align: center;
+    font-size: 48px;
+    color: variables.$primary-color;
+}
+
+.cards-flex {
+    @include mixins.flexbox(flex-start, space-between)
+}
+
+.cards-card1 {
+    width: 193px;
+    height: 215px;
+    background: #FFFFFF;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.cards-value {
+    width: 126px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: variables.$primary-color;
+    margin: 0 auto;
+}
+
+.cards-img__doctor {
+    padding-bottom: 22px;
+    @include mixins.flexbox(center);
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.cards-card2 {
+    width: 193px;
+    height: 201px;
+    background: #FFFFFF;
+    border: 1px solid #F3F3F3;
+    border-radius: 5px;
+}
+
+.cards-images {
+    background: #FFFFFF;
+    border-radius: 0px 5px 5px 5px;
+}
+
+.cards-images {
+    @include mixins.flexbox(flex-start, flex-start, space-between);
+}
+
+.cards-cat {
+    padding-bottom: 43px;
+    padding-top: 42px;
+    padding-left: 35px;
+}
+
+.cards-img__text {
+    font-weight: 500;
+    font-size: 36px;
+    color: variables.$primary-color;
+}
+
+.cards-text__btn {
+    padding-top: 74px;
+    padding-left: 67px;
+}
+
+.cards-text {
+    padding-top: 18px;
+    width: 492px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: variables.$text-color;
+}
+
+.cards-text2 {
+    width: 492px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: variables.$text-color;
+    padding-top: 9px;
+    padding-bottom: 34px;
+}
+
+.cards-value__btn {
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 185px;
+    height: 50px;
+    background: #FFBD54;
+    border-radius: 3px;
+    border: none;
+    transition: 0.3s;
+}
+
+.cards-value__btn:hover {
+    color: #FFBD54;
+    transition: 0.3s;
+    background-color: variables.$primary-color;
+}
+
+.cards-value_btn {
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 241px;
+    height: 50px;
+    background: variables.$primary-color;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+.cards-value_btn:hover {
+    color: variables.$primary-color;
+    background-color: #FFBD54;
+    border: none;
+    transition: 0.5s;
+}

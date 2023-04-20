@@ -1,0 +1,49 @@
+@use '../mixins';
+@use '../variables';
+.section-texts {
+    background-color: #F9F8F8;
+}
+
+.section-hr {
+    width: 140px;
+    height: 0px;
+    border: 1px solid #DBDBDB;
+}
+
+.section-flex {
+    position: relative;
+    @include mixins.flexbox(center, flex-start, column)
+}
+
+.section-texts {
+    padding-top: 75px;
+}
+
+.section-value__p {
+    width: 753px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: variables.$text-color;
+    padding-top: 43px;
+    padding-bottom: 35px;
+}
+
+.section-h4__item {
+    padding-top: 35px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: variables.$primary-color;
+}
+
+.section-open {
+    position: absolute;
+    left: 0;
+}
+
+.section-close {
+    position: absolute;
+    right: 0;
+}

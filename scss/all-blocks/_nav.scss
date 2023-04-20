@@ -1,0 +1,97 @@
+@use '../mixins';
+@use '../variables';
+.nav-first {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #F9F8F8
+}
+
+.nav-h {
+    @include mixins.flexbox(center);
+}
+
+.nav-items__ul {
+    padding-left: 16px;
+    @include mixins.flexbox(center);
+}
+
+.nav-items__ul .nav-item__li {
+    font-style: normal;
+    font-weight: 500;
+    @include mixins.flexbox(center);
+    column-gap: 9px;
+    font-size: 14px;
+    color: variables.$primary-color;
+}
+
+.nav-items__ul .nav-item__li2 {
+    @include mixins.flexbox(center);
+    column-gap: 9px;
+    font-style: normal;
+    color: variables.$primary-color;
+    font-weight: 500;
+    font-size: 14px;
+    padding-left: 106px;
+}
+
+.nav-items__ul .nav-item__li3 {
+    padding-left: 9px;
+    @include mixins.flexbox(center);
+    column-gap: 9px;
+    font-style: normal;
+    color: variables.$primary-color;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.nav-items__ul .nav-item__li4 {
+    padding-left: 98px;
+    @include mixins.flexbox(center);
+    column-gap: 9px;
+    font-style: normal;
+    color: variables.$primary-color;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.nav-items__ul .nav-item__li5 {
+    padding-left: 17px;
+    @include mixins.flexbox(center);
+    column-gap: 9px;
+    font-style: normal;
+    color: variables.$primary-color;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.nav-second {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #FFFFFF;
+    border: 1px solid #F3F3F3;
+}
+
+.nav-ul__li {
+    @include mixins.flexbox(center);
+}
+
+.nav_second-ul {
+    padding-left: 115px;
+    @include mixins.flexbox(center);
+}
+
+.nav-second__li {
+    padding-right: 55px;
+}
+
+.nav-second__li1 {
+    padding-left: 12px;
+}
+
+.nav_second-item {
+    @include mixins.flexbox(center);
+}
+
+.nav_second-item li a {
+    color: variables.$primary-color;
+}

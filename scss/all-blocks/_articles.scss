@@ -1,0 +1,99 @@
+@use '../mixins';
+@use '../variables';
+.articles-h {
+    padding-bottom: 80px;
+    text-align: center;
+    padding-top: 151px;
+    font-size: 48px;
+    color: variables.$primary-color;
+}
+
+.article-cards {
+    @include mixins.flexbox(center, space-between)
+}
+
+.article-card {
+    width: 305px;
+    height: 435px;
+    border: 1px solid #E4E4E2;
+    border-radius: 5px;
+}
+
+.article-number {
+    padding-left: 212px;
+    font-size: 14px;
+    color: variables.$text-color;
+}
+
+.article-value {
+    padding-left: 30px;
+    width: 182px;
+    font-size: 22px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.article-value__p {
+    padding-left: 30px;
+    width: 244px;
+    font-size: 16px;
+    line-height: 20px;
+    color: variables.$text-color;
+    padding-top: 10px;
+}
+
+.article-display__flex {
+    padding-top: 34px;
+    column-gap: 5px;
+    @include mixins.flexbox(center);
+}
+
+.article-value-img {
+    padding-left: 22px;
+}
+
+.article-card2 {
+    @include mixins.flexbox(center);
+}
+
+.article-div {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    width: 305px;
+    height: 435px;
+}
+
+.article-div ul {
+    padding-left: 30px;
+    column-gap: 7px;
+    padding-top: 43px;
+    @include mixins.flexbox(center);
+}
+
+.article-div ul li a {
+    font-size: 14px;
+    color: #3D9CEA;
+}
+
+.article-div ul li {
+    font-size: 14px;
+    color: variables.$text-color;
+}
+
+.article-class {
+    padding-top: 32px;
+    width: 200px;
+    font-size: 26px;
+    line-height: 29px;
+    color: variables.$primary-color;
+    padding-left: 31px;
+}
+
+.article-p__value {
+    width: 270px;
+    font-size: 16px;
+    line-height: 20px;
+    color: variables.$text-color;
+    margin-left: 31px;
+}

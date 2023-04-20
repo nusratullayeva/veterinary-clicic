@@ -1,0 +1,21 @@
+@mixin flexbox($align:default, $justify:default, $fldirection:default) {
+    display: flex;
+    @if $align {
+        align-items: $align;
+    }
+    @else {
+        align-items: center;
+    }
+    @if $justify {
+        justify-content: $justify;
+    }
+    @else {
+        justify-content: space-between;
+    }
+    @if $fldirection {
+        flex-direction: $fldirection;
+    }
+    @else {
+        flex-direction: column;
+    }
+}

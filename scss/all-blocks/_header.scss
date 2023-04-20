@@ -1,0 +1,71 @@
+@use '../mixins';
+@use '../variables';
+header {
+    background-color: #F9F8F8;
+    min-height: 100vh;
+    background-size: cover;
+    background-image: url(../images/header-bg.png);
+    background-repeat: no-repeat;
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+        background-image: url(../images/header-bg2.png);
+        background-size: cover;
+    }
+}
+
+.header-texts-wrappres {
+    position: relative;
+    @include mixins.flexbox(center, flex-start, column)
+}
+
+h1 {
+    position: absolute;
+    right: 0;
+    top: 153px;
+    width: 608px;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 64px;
+    color: variables.$primary-color;
+}
+
+h1 span {
+    color: #78C0DE;
+}
+
+.header-p {
+    position: absolute;
+    top: 310px;
+    left: 677px;
+    width: 495px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: variables.$text-color;
+}
+
+.header-button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 181px;
+    height: 50px;
+    background: variables.$primary-color;
+    border-radius: 3px;
+    position: absolute;
+    top: 453px;
+    margin-left: 260px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.header-button:hover {
+    color: variables.$primary-color;
+    background-color: #FFBD54;
+    border: none;
+    transition: 0.5s;
+}
+
+.header-button:active {
+    opacity: 5;
+}
